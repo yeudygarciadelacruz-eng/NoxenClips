@@ -5,16 +5,54 @@
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif}
 main{max-width:760px;margin:0 auto;padding:40px 16px 64px}h1{font-size:30px;margin:0 0 6px}h2{font-size:19px;margin:28px 0 6px}
 a{color:var(--acc)}.mut{color:var(--mut);font-size:14px}nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:28px;font-size:14px}
-.card{background:var(--card);border-radius:14px;padding:18px 20px;margin:18px 0}ul{padding-left:20px}
+.card{background:var(--card);border-radius:14px;padding:18px 20px;margin:18px 0}ul{padding-left:20px}li{margin:4px 0}
+code{font-size:14px}
 </style></head><body><main><nav><a href="./">NOXEN Clips</a><a href="terminos.html">Términos de uso</a><a href="privacidad.html">Política de privacidad</a></nav>
-<h1>Política de privacidad</h1><p class="mut">Última actualización: 6 de noviembre de 2026</p>
-<h2>Resumen</h2><p>NOXEN Clips funciona en el ordenador del usuario. No tenemos servidores que reciban tus vídeos, tus datos de TikTok ni tu actividad.</p>
-<h2>Datos que trata la aplicación</h2><ul>
-<li><b>Grabaciones y cortes:</b> se guardan solo en tu ordenador.</li>
-<li><b>Datos de TikTok (si conectas tu cuenta):</b> tu identificador abierto (open_id), nombre visible y avatar, y los tokens de acceso que entrega TikTok. Se guardan solo en tu ordenador, en un archivo que únicamente tu usuario puede leer, y se usan exclusivamente para enviar a tus borradores de TikTok los cortes que tú eliges.</li>
-<li><b>Informes de error:</b> solo si tú decides enviarlos, e incluyen información técnica del equipo y registros de la aplicación.</li></ul>
-<h2>Con quién se comparten</h2><p>Los vídeos que eliges enviar se suben directamente desde tu ordenador a TikTok mediante su API oficial. No vendemos ni compartimos datos con nadie más.</p>
-<h2>Permisos de TikTok</h2><p>La aplicación pide los permisos <code>user.info.basic</code> (para mostrar con qué cuenta estás conectado) y <code>video.upload</code> (para enviar cortes a tus borradores). Puedes desconectar tu cuenta en cualquier momento desde la aplicación («TikTok → Desconectar»), lo que borra los tokens de tu ordenador, o retirar el acceso desde los ajustes de tu cuenta de TikTok.</p>
-<h2>Borrado de datos</h2><p>Al desconectar TikTok o desinstalar la aplicación se eliminan los datos de TikTok guardados. Puedes borrar tus grabaciones y cortes desde la propia aplicación.</p>
-<h2>Contacto</h2><p>Para cualquier pregunta sobre privacidad, escribe a la dirección de contacto indicada abajo.</p>
+<h1>Política de privacidad</h1><p class="mut">Última actualización: 10 de noviembre de 2026</p>
+
+<div class="card"><b>En pocas palabras</b><p style="margin:6px 0 0">NOXEN Clips funciona en tu ordenador. Tus grabaciones, cortes, subtítulos y ajustes se quedan ahí. No tenemos servidores que reciban tus vídeos ni tu actividad, no vendemos datos y no mostramos publicidad.</p></div>
+
+<h2>1. Quiénes somos</h2>
+<p>NOXEN Clips («la aplicación», «nosotros») es una aplicación de escritorio para macOS y Windows. Para cualquier tema de privacidad puedes escribirnos a <a href="mailto:gydrox.company@gmail.com">gydrox.company@gmail.com</a>.</p>
+
+<h2>2. Lo que se queda solo en tu ordenador</h2>
+<ul>
+<li><b>Grabaciones, cortes, subtítulos, títulos y descripciones.</b> La transcripción, el «juez» que puntúa los momentos, el detector de sonidos y la redacción de títulos usan modelos de inteligencia artificial que se ejecutan en tu equipo. Tu contenido no se envía a ningún servicio de IA externo.</li>
+<li><b>Ajustes y aprendizaje.</b> Tus preferencias, los nombres que añades por canal y las correcciones de subtítulos que la app aprende.</li>
+<li><b>Tokens de cuentas conectadas</b> (TikTok y, cuando esté disponible, YouTube): se guardan en un archivo que solo tu usuario del sistema puede leer.</li>
+</ul>
+
+<h2>3. Lo que sale de tu ordenador y por qué</h2>
+<ul>
+<li><b>Directos que grabas.</b> La app descarga el directo público que tú eliges desde YouTube, Twitch o Kick, igual que lo haría un navegador.</li>
+<li><b>Licencia.</b> Al activar una licencia de pago se envían a nuestro proveedor de pagos (Lemon Squeezy) la clave de licencia y un nombre para el equipo (el nombre del ordenador y el sistema, por ejemplo «MacBook de Ana · Mac»), para que puedas ver y liberar tus ordenadores. Cada pocos días la app comprueba que la licencia sigue activa. Las claves que empiezan por <code>NOXEN-</code> se comprueban descargando una lista firmada desde GitHub; en ese caso no se envía ningún dato tuyo.</li>
+<li><b>Pagos.</b> El pago lo procesa Lemon Squeezy, que actúa como vendedor oficial (<i>merchant of record</i>) y gestiona la factura y los impuestos. Nombre, correo, país y datos de pago los recoge Lemon Squeezy según <a href="https://www.lemonsqueezy.com/privacy">su política de privacidad</a>. Nosotros recibimos tu nombre, tu correo y lo que compraste, pero nunca los datos de tu tarjeta.</li>
+<li><b>Actualizaciones y modelos.</b> La app consulta en GitHub si hay una versión nueva y descarga de Hugging Face los modelos de IA la primera vez que los usas. Son descargas normales y no incluyen datos tuyos.</li>
+<li><b>TikTok (si conectas tu cuenta).</b> Tu identificador abierto (open_id), nombre visible y avatar, y los tokens que entrega TikTok. Se usan solo para enviar a tus borradores los cortes que tú eliges y, si lo activas, para leer las vistas de tus vídeos y aprender qué funciona. Permisos: <code>user.info.basic</code>, <code>video.upload</code> y, de forma opcional, <code>video.list</code>.</li>
+<li><b>YouTube (cuando esté disponible).</b> Si conectas tu canal, la app sube los cortes que tú eliges mediante la API de datos de YouTube. El uso de esos datos sigue la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a> y los <a href="https://www.youtube.com/t/terms">Términos de servicio de YouTube</a>. Puedes retirar el acceso en <a href="https://myaccount.google.com/permissions">la página de permisos de tu cuenta de Google</a>.</li>
+<li><b>Avisos en el móvil (opcional).</b> Si los activas, la app envía mensajes cortos (por ejemplo, «nuevo corte listo») a tu tema privado del servicio gratuito ntfy.sh.</li>
+<li><b>Avisos de error (opcional, apagado por defecto).</b> Si los activas, cuando algo falla la app nos envía un aviso corto: versión, sistema, tipo de error, la parte del código donde ocurrió y un número al azar de la instalación. No incluye vídeos, títulos, nombres de canal, rutas de archivos ni tu nombre de usuario.</li>
+<li><b>Informes de soporte.</b> Solo si tú decides enviarlos por correo. Incluyen información técnica del equipo y registros de la aplicación.</li>
+</ul>
+
+<h2>4. Con quién se comparten</h2>
+<p>Solo con los servicios de arriba y para lo que se explica en cada punto. No vendemos ni alquilamos datos personales ni los usamos para publicidad.</p>
+
+<h2>5. Cuánto tiempo se guardan</h2>
+<p>Lo que está en tu ordenador se queda ahí hasta que tú lo borras. Los datos de compra los guarda Lemon Squeezy mientras lo exija la ley (por ejemplo, para facturas e impuestos). Los avisos de error se guardan solo el tiempo necesario para arreglar el fallo.</p>
+
+<h2>6. Tus derechos y cómo borrar tus datos</h2>
+<ul>
+<li>Puedes borrar grabaciones y cortes desde la app, y olvidar lo aprendido en Ajustes.</li>
+<li>Al desconectar TikTok o YouTube se borran sus tokens de tu ordenador. También puedes retirar el acceso desde los ajustes de cada cuenta.</li>
+<li>Al desactivar la licencia en la app se libera ese ordenador.</li>
+<li>Puedes pedirnos por correo una copia o el borrado de los datos de compra que tengamos. Te responderemos en un máximo de 30 días.</li>
+</ul>
+
+<h2>7. Menores</h2>
+<p>La aplicación no está dirigida a menores de 16 años. Para comprar una licencia hay que ser mayor de edad o contar con permiso de padre, madre o tutor.</p>
+
+<h2>8. Cambios</h2>
+<p>Si cambiamos esta política, publicaremos aquí la nueva versión con su fecha. Si el cambio es importante, también lo avisaremos en las novedades de la app.</p>
+
 <p class="mut" style="margin-top:40px">Contacto: <a href="mailto:gydrox.company@gmail.com">gydrox.company@gmail.com</a></p></main></body></html>
